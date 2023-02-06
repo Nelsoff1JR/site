@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    text-align: center;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+   
+}
+
+header p {
+    color: white;
+}
+
+#priParagHeader {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 40px;
+    padding-bottom: 10px;
+}
+
+#segParagHeader {
+    font-weight: 700;
+    font-style: italic; 
+    letter-spacing: 5px;
+}
+
+#princFotoDiv {
+    text-align: center; 
+ 
+}
+
+#princFoto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 5px solid white;
+}
+
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#whiteColumPrincipal {
+    width: 100vw;
+    height: 100vh;  
+    border-radius: 20px; 
+    background-color: black;
+}
+
+#blackColumRight,
+#blackColumLeft {
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+}
+
+#quemSouDiv {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    border: 5px solid white;
+}
+
+#quemSouDiv h1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 700px;
+}
+
+#quemSouDiv p {
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+#habilidadesDiv {
+    text-align: center;
+    background-color: white;
+    border-radius: 40px
+
+}
+
+#habiliHtmlDiv {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#habiliHtmlDiv img {
+    width: 100px;
+    height: 100px;
+}
