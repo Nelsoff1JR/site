@@ -1,14 +1,22 @@
-*{
+@media screen and (min-width: 1558px){
+  *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
+hr{
+  border: none;
+  height: 5px;
+  background-color: #A9A9A9;
+  margin-top: 10px;
+}
+
 header{
     width: 100%;
     height: 150px;
-    background-color: black;
+    background-color:#4F4F4F;
     text-align: center;  
     display: flex;
     align-items: center;
@@ -18,8 +26,9 @@ header{
    
 }
 
-header p {
-    color: white;
+header h1 {
+    color: black;
+    margin-left: 30px;
 }
 
 #priParagHeader {
@@ -46,63 +55,416 @@ header p {
     height: 200px;
     margin-top: 40px;
     margin-bottom: 30px;
-    border: 5px solid white;
+    border: 5px solid black;
+}
+
+body {
+  background-color: #A9A9A9
 }
 
 
 main {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  background-color: #A9A9A9
 }
 
 #whiteColumPrincipal {
     width: 100vw;
-    height: 100vh;  
+    height: 100%;  
     border-radius: 20px; 
-    background-color: black;
+    background-color: #4F4F4F;
 }
 
-#blackColumRight,
-#blackColumLeft {
+#blackColumRight, #blackColumLeft {
     width: 400px;
     height: 100vh;
-    background-color: white;
+    background-color: #A9A9A9;
 }
 
-#quemSouDiv {
-    background-color: black;
-    color: white;
-    text-align: center;
-    border-radius: 40px;
-    margin-bottom: 10px;
-    border: 5px solid white;
+.fundoEscuroCBorda{
+  background-color:#4F4F4F;
+  color: #A9A9A9;
+  text-align: center;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  border: 5px solid #A9A9A9;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: auto;
 }
 
-#quemSouDiv h1 {
+.fundoClaroSBorda{
+  text-align: center;
+  background-color: #A9A9A9;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color:#4F4F4F;
+  height: auto;
+}
+
+
+.fundoEscuroCBorda h1, .fundoClaroSBorda h1{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 700px;
+  color: black;
+}
+
+.fundoEscuroCBorda p, .fundoClaroSBorda p{
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+
+
+
+.habiliAllClass {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.habiliAllClass img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px;
+}  
+
+.habiliAllClass p{
+    margin-right: 50px;
+    color:#4F4F4F;
+    
+
+}
+
+#qualidadeDiv, #defeitoDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#defeitoDiv{
+  margin-bottom: 20px;
+}
+
+#defeitoDiv h1 {
     padding-bottom: 10px;
     padding-top: 10px;
     font-weight: 700px;
+
 }
 
-#quemSouDiv p {
-    padding-bottom: 10px;
-    font-style: italic;
+#tituloDefeitosDiv {
+  color: black;
+  margin: 0px;
 }
 
-#habilidadesDiv {
+
+
+#primQualidadeDiv, #seguQualidadeDiv, #tercQualidadeDiv, #quarQualidadeDiv, #quinQualidadeDiv,
+#primDefeitoDiv, #seguDefeitoDiv, #tercDefeitoDiv{
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
     text-align: center;
-    background-color: white;
-    border-radius: 40px
+    background-color: #696969;
+    margin: 0 auto;
+}
+   
+#primQualidadeDiv img, #seguQualidadeDiv img, #tercQualidadeDiv img, #quarQualidadeDiv img, #quinQualidadeDiv img,
+#primDefeitoDiv img, #seguDefeitoDiv img, #tercDefeitoDiv img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  
+}
+
+#primQualidadeDiv p, #seguQualidadeDiv p, #tercQualidadeDiv p, #quarQualidadeDiv p, #quinQualidadeDiv p,
+#primDefeitoDiv p, #seguDefeitoDiv p, #tercDefeitoDiv p {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.posicaoCurriculoDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posicaoCurriculoDiv div ul {
+  margin: 0px 25px;
+}
+
+.posicaoCurriculoDiv div p {
+  margin-left: 50px;
+}
+
+.posicaoCurriculoDiv div{
+  padding-bottom: 40px;
+  color:#4F4F4F;
+}
+
+
+form{
+  border: 5px solid #A9A9A9;
+  border-radius: 40px;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+form div label {
+  display: block;
+  text-align: start;
+  padding-left: 105px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  
+}
+
+#erroMsgNome, #erroMsgEmail, #erroMsgTelefone, #erroMsgTexto {
+  color: red;
+  font-size: 10px;
+  font-style: italic;
+  
+}
 
 }
 
-#habiliHtmlDiv {
+@media screen and (max-width: 1558px){
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+  border: none;
+  height: 5px;
+  background-color: #A9A9A9;
+  margin-top: 10px;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color:#4F4F4F;
+    text-align: center;  
     display: flex;
-    justify-content: space-between;
-
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+   
 }
 
-#habiliHtmlDiv img {
+header h1 {
+    color: black;
+    margin-left: 30px;
+}
+
+#priParagHeader {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 40px;
+    padding-bottom: 10px;
+}
+
+#segParagHeader {
+    font-weight: 700;
+    font-style: italic; 
+    letter-spacing: 5px;
+}
+
+#princFotoDiv {
+    text-align: center; 
+ 
+}
+
+#princFoto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 5px solid black;
+}
+
+body {
+  background-color: #A9A9A9
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A9A9A9
+}
+
+#whiteColumPrincipal {
+    width: 100vw;
+    height: 100%;  
+    border-radius: 20px; 
+    background-color: #4F4F4F;
+}
+
+#blackColumRight, #blackColumLeft {
+    width: 400px;
+    height: 100vh;
+    background-color: #A9A9A9;
+}
+
+.fundoEscuroCBorda{
+  background-color:#4F4F4F;
+  color: #A9A9A9;
+  text-align: center;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  border: 5px solid #A9A9A9;
+  margin-right: 10px;
+  margin-left: 10px;
+  height: auto;
+}
+
+.fundoClaroSBorda{
+  text-align: center;
+  background-color: #A9A9A9;
+  border-radius: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color:#4F4F4F;
+  height: auto;
+}
+
+
+.fundoEscuroCBorda h1, .fundoClaroSBorda h1{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: 700px;
+  color: black;
+}
+
+.fundoEscuroCBorda p, .fundoClaroSBorda p{
+  padding: 0px 10px;
+  padding-bottom: 10px;
+  font-style: italic;
+}
+
+
+
+.habiliAllClass {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.habiliAllClass img {
     width: 100px;
     height: 100px;
+    margin: 10px 30px;
+}  
+
+.habiliAllClass p{
+    margin: 10px 10px;
+    color:#4F4F4F;
+    
+
 }
+
+#defeitoDiv{
+  margin-bottom: 20px;
+}
+
+#defeitoDiv h1 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 700px;
+
+}
+
+#tituloDefeitosDiv {
+  color: black;
+  margin: 0px;
+}
+
+
+
+#primQualidadeDiv, #seguQualidadeDiv, #tercQualidadeDiv, #quarQualidadeDiv, #quinQualidadeDiv,
+#primDefeitoDiv, #seguDefeitoDiv, #tercDefeitoDiv{
+    width: 200px;
+    height: auto;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #696969;
+    margin: 0 auto;
+}
+   
+#primQualidadeDiv img, #seguQualidadeDiv img, #tercQualidadeDiv img, #quarQualidadeDiv img, #quinQualidadeDiv img,
+#primDefeitoDiv img, #seguDefeitoDiv img, #tercDefeitoDiv img {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+#primQualidadeDiv p, #seguQualidadeDiv p, #tercQualidadeDiv p, #quarQualidadeDiv p, #quinQualidadeDiv p,
+#primDefeitoDiv p, #seguDefeitoDiv p, #tercDefeitoDiv p {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.posicaoCurriculoDiv div ul {
+  margin: 0px 25px;
+}
+
+.posicaoCurriculoDiv div p {
+  margin-left: 50px;
+}
+
+.posicaoCurriculoDiv div{
+  margin: 0 auto;
+  padding-bottom: 40px;
+  color:#4F4F4F;
+}
+
+
+form{
+  border: 5px solid #A9A9A9;
+  border-radius: 40px;
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+form div label {
+  display: block;
+  text-align: start;
+  padding-left: 105px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  
+}
+
+#erroMsgNome, #erroMsgEmail, #erroMsgTelefone, #erroMsgTexto {
+  color: red;
+  font-size: 10px;
+  font-style: italic;
+  
+}
+
+
+
